@@ -37,7 +37,7 @@ public class NewServlet extends HttpServlet {
         //文字数0のデータを一旦渡す（エラー回避のため）
         request.setAttribute("task", new Task());
 
-        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/taks/new.jsp");
+        RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/views/tasks/new.jsp");
         rd.forward(request, response);
     }
 
